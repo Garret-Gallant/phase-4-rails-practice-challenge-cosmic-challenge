@@ -28,12 +28,12 @@ class ScientistsController < ApplicationController
 
 private
 
-def scientist_params
-  params.permit(:name, :field_of_study, :avatar)
-end
-
-def find_scientist
-  Scientist.find(params[:id])
-end
+  def scientist_params
+    params.permit(:name, :field_of_study, :avatar)
+  end
+  
+  def find_scientist
+    Scientist.find(params[:id])
+  end
 
 end
